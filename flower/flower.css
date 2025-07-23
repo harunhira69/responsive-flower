@@ -318,7 +318,41 @@ width: 540px;
   
     /* left: 10px; */
 }
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.logo-description{
+    color: rgba(0, 0, 0, 0.5);
+    width: 359px;
+    font-size: 1.375rem;
+}
+.footer-a{
+    text-decoration: none;
+    color: rgba(107, 109, 128, 1);
+    
 
+}
+.footer-li{
+    list-style: none;
+
+}
+.footer-nav{
+    display: grid;
+    grid-template-columns:1fr ;
+}
+.footer-head{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+}
+.footer-logo img{
+    
+ margin-left: 32px;
+ text-align: center;
+ align-items: center;
+ width: 36px;
+}
 
 
 
@@ -412,12 +446,21 @@ width: 540px;
 
 /* Resposive for Laptop */
 @media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        max-width: 1140px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    nav{
+      
+    }
     .banner{
         display: flex;
         justify-content: center;
         align-items: center;
         padding-left: 16px;
        padding-right: 16px;
+       margin-top: 120px;
     }
     .banners{
         width: 50%;
@@ -431,7 +474,7 @@ width: 540px;
     }
     .banner-description{
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .plant{
        margin: 0 auto;
@@ -455,7 +498,7 @@ width: 540px;
     align-items: center;
 }
 .our{
-     margin: auto;
+     margin: 100px auto auto auto auto;
      text-align: center;
      align-items: center;
 }
@@ -468,12 +511,13 @@ width: 540px;
     align-items: center;
    
 }
-.input-field{
+.input-head{
     
-    padding-right: -50px;
+  text-align: center;
+ margin-right: 100px;
 }
 .subscribe{
-    width: 186px;
+    width: 180px;
     height: 50px;
     padding: 15px 25px;
     text-align: center;
