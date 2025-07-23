@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 1140px;
+    margin: auto;
+    /* background-color: aqua; */
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+.home{
+    color: rgb(37, 36, 50);
+    font-weight: 700;
+
+}
+.shop{
+    color: rgb(137, 135, 161);
+    font-weight: 400;
+}
+.about-us{
+    color: rgb(137, 135, 161);
+    font-weight: 400;
+}
+.banner-title{
+    font:bold;
+    font-size:65px;
+    color: #000000;
+
+}
+.span{
+    color: #E95A08;
+}
+.banner-description{
+    color: rgba(0, 0, 0, 0.5);
+    width: 570px;
+    margin-top: 13px;
+}
+.image img{
+    width: 100%;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Resposnive for small device */
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banners{
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        margin-top: 28px;
+    }
+    .banner-description{
+        width: 100%;
+    }
+    
+}
+
+/* Resposive for Laptop */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 16px;
+       padding-right: 16px;
+    }
+    .banners{
+        width: 50%;
+    }
+    .image{
+        width: 50%;
+    }
+    .image img{
+        width: 100%;
+        height: auto;
+    }
+    .banner-description{
+        width: 100%;
+    }
+  
+    
+}
