@@ -44,13 +44,15 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
 }
-   .icon{
+   .icons{
      display: flex;
-  align-items: center;
   gap: 4px;
   font-size: 16px;
-  flex-wrap: nowrap;
+   white-space: nowrap;
+  
       
     }
 .shop{
@@ -391,25 +393,24 @@ footer{
 /* Resposnive for small device */
 @media screen and (max-width:576px) {
     nav{
-        flex: 1;
+      
+      margin: 0 auto;
         text-align: center;
-        margin: auto;
+        align-items: center;
+        justify-items: center;
+     
+       justify-content: space-between;
+        
     }
     ul a{
         display: none;
     }
-       .icon{
-     display: inline-flex;
-     border: 1px solid red;
-     padding: 0;
-     margin: 0;
-     margin-right: 16px;
-
-      
-    }
-    .cart{
-      width: 79px;
-    }
+       .icons{
+     
+       
+        
+  }
+ 
     .banner{
         flex-direction: column-reverse;
         align-items: center;
