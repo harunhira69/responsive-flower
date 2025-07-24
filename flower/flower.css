@@ -42,6 +42,8 @@ ul li a{
 }
 nav{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
    
 
     max-width: 1140px;
@@ -578,11 +580,14 @@ footer{
     nav{
       justify-content: space-between;
       justify-items: center;
+      align-items: center;
+      text-align: center;
+      
     }
  
     .banner{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
         padding-left: 16px;
@@ -606,6 +611,9 @@ footer{
     .image img{
         width: 100%;
         height: auto;
+    }
+    .banner-title{
+      width: 100%;
     }
     .banner-description{
         width: 100%;
