@@ -45,6 +45,14 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+   .icon{
+     display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  flex-wrap: nowrap;
+      
+    }
 .shop{
     color: rgb(137, 135, 161);
     font-weight: 400;
@@ -247,20 +255,32 @@ max-width: 100%;
   text-align: center;
   margin-bottom: 8px;
 }
+.left-top-card{
+  text-align: center;
+}
 
 .button {
   background: transparent;
   border: none;
   color: white;
   font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+
+
   cursor: pointer;
 }
+#buton{
+  font-weight: 600;
+  width: 138px;
+  font-size: 1.75rem;
+}
 
-.button-hr {
-  width: 50%;
-  border: 1px solid white;
-  opacity: 0.5;
-  margin: 5px auto 0;
+
+
+#big-card{
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 
@@ -371,11 +391,24 @@ footer{
 /* Resposnive for small device */
 @media screen and (max-width:576px) {
     nav{
+        flex: 1;
         text-align: center;
         margin: auto;
     }
     ul a{
         display: none;
+    }
+       .icon{
+     display: inline-flex;
+     border: 1px solid red;
+     padding: 0;
+     margin: 0;
+     margin-right: 16px;
+
+      
+    }
+    .cart{
+      width: 79px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -401,6 +434,9 @@ footer{
     .card-head{
         grid-template-columns: repeat(2,1fr);
 
+    }
+    .btn{
+      padding: 10px 20px;
     }
   .flowers-head {
     flex-direction: column;
@@ -434,15 +470,8 @@ footer{
     padding: 15px 25px;
     text-align: center;
 }
-.color-title{
-    font-size: 1.2rem;
-    text-align: center;
-}
-.color-join{
-    padding: 110px 36px 64px 36px;
-    align-items: center;
-    
-}
+
+
  .deal-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -463,6 +492,23 @@ footer{
   }
   .plant{
     margin-top: 120px;
+  }
+  .color-join{
+    margin: 0;
+    padding: 110px 30px 64px 10px;
+    width: 100%;
+  }
+  .color-title{
+    font-size: 1.25rem;
+  }
+  .input-head{
+    border: 1px solid red;
+    position: absolute;
+  }
+  .email{
+    margin: 0;
+    text-align: left;
+    position: relative;
   }
    .footer-head {
     grid-template-columns: 1fr; 
@@ -518,9 +564,7 @@ footer{
         text-align: center;
         align-items: center;
     }
-    nav{
-      
-    }
+ 
     .banner{
         display: flex;
         justify-content: center;
