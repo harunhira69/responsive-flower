@@ -153,10 +153,12 @@ padding: 0 16px;
     margin-top: 200px;
 }
 .list-style {
-  list-style-type: disc;
+  list-style: disc;
   padding-left: 1.5rem;
+  color: gray;
   margin: 0;
   width: 100%;
+  display: block;
 }
 
 .bullet {
@@ -164,26 +166,27 @@ padding: 0 16px;
   color: rgba(0, 0, 0, 0.5);
   width: 540px;
   margin-bottom: 12px;
+  list-style: disc;
 }
-.flowers-head{
+.flowers-head {
+  display: flex;
+justify-content: space-between;
+gap: 70px;
+align-items: center;
+}
+.flower{
     display: flex;
- flex-wrap: wrap;
-  
-    align-items: flex-start;
-
-    gap: 60px;
+    margin-top: 120px;
 }
 .store-img{
 width: 540px;
+max-width: 100%;
 }
 .flower-image{
     position: relative;
     display: inline-block;
 }
-.flower-plants{
-    width: 100%;
-    flex-direction: column;
-}
+
 .badge{
     position: absolute;
      width: 286px;              
@@ -392,26 +395,23 @@ footer{
         grid-template-columns: repeat(2,1fr);
 
     }
-    .flowers-head{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-      
-    }
-    
+  .flowers-head {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 
-    .badge{
-        display: none;
-    }
-   .store-img{
+  .store-img {
     width: 100%;
-    align-items: center;
-    text-align: center;
-   }
-   .flowers-head{
-    text-align: center;
-    align-items: center;
-}
+  }
+
+  .badge {
+    display: none;
+  }
+
+  .bullet {
+    width: 100%;
+  }
 .our{
     align-items: center;
     text-align: center;
@@ -448,7 +448,8 @@ footer{
 @media screen and (min-width:576px) and (max-width:992px) {
     header{
         max-width: 1140px;
-        margin: 0 auto;
+        margin: 0 auto auto auto;
+        text-align: center;
         align-items: center;
     }
     nav{
@@ -458,12 +459,21 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding-left: 16px;
        padding-right: 16px;
        margin-top: 120px;
+       margin-left: auto;
+       margin-right: auto;
     }
     .banners{
         width: 50%;
+    }
+    .card-head{
+        align-items: center;
+        text-align: center;
+        max-width: 1140px;
+        margin: auto;
     }
     .image{
         width: 50%;
@@ -481,14 +491,79 @@ footer{
         text-align: center;
        
     }
-       .flowers-head{
-        width: 100%;
-    text-align: center;
-    align-items: center;
-}
-.store-img{
+   .flowers-head {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  .flower-image {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .store-img {
     width: 100%;
-}
+    max-width: 540px;
+    height: 400px;
+   
+   height:auto;
+   object-fit: cover;
+    display: block;
+  }
+
+  .badge {
+    position: absolute;
+    display: block;
+    width: 120px;
+    top: -40px;
+    left: 80px;
+    transform: translateX(80px);
+  }
+
+  .flower-plants {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .flower-plants-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .list-style {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+
+  .bullet {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+
+
+
+   
+
+
+
+
+
+
+
+
 .card-head{
     justify-items: center;
     align-items: center;
