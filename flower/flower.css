@@ -42,19 +42,22 @@ ul li a{
 }
 nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
+
     max-width: 1140px;
     margin: 0 auto;
 }
    .icons{
      display: flex;
-  gap: 4px;
-  font-size: 16px;
+  font-size: 1rem;
+ 
    white-space: nowrap;
+     overflow: hidden;
+  text-overflow: ellipsis;
   
       
     }
+
 .shop{
     color: rgb(137, 135, 161);
     font-weight: 400;
@@ -392,12 +395,16 @@ footer{
 
 /* Resposnive for small device */
 @media screen and (max-width:576px) {
+  header{
+    margin: 0 auto;
+  }
     nav{
       
       margin: 0 auto;
         text-align: center;
         align-items: center;
         justify-items: center;
+        
      
        justify-content: space-between;
         
@@ -406,6 +413,9 @@ footer{
         display: none;
     }
        .icons{
+        align-self: flex-end;
+        align-items: center;
+        
      
        
         
@@ -564,6 +574,10 @@ footer{
         margin: 0 auto auto auto;
         text-align: center;
         align-items: center;
+    }
+    nav{
+      justify-content: space-between;
+      justify-items: center;
     }
  
     .banner{
